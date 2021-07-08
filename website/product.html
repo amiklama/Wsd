@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop4U</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+  <section class="main">
+    <div class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/et.png" width="125px"></a>
+      </div>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <div class="cartlogo">
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+      </div>
+      <img src="images/menu.png" class="menu" onclick="menutoggle()">
+    </div>
+  </section>
+
+  <div class="imgwrap">
+    <div class="row row2">
+      <h2>All Products</h2>
+      <select>
+        <option>Sort: Relevance</option>
+        <option>Price</option>
+        <option>Rating</option>
+        <option>Sale</option>
+      </select>
+    </div>
+    <div class="row">
+      <div class="col4">
+        <img src="./assets/Mask Group-1.png">
+        <h4>Kettlebell</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>Rs. 1,999</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/Mask Group-3.png">
+        <h4>Dumbbell</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <p>Rs. 2,599</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/Mask Group-5.png">
+        <h4>Barbell</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>Rs. 3,999</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/Mask Group-7.png">
+        <h4>Cycling</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <p>Rs. 2,599</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col4">
+        <img src="./assets/Mask Group-9.png">
+        <h4>Power Rack (Weight Lifting)</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>Rs. 1,999</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/Mask Group.png">
+        <h4>Power Rack (Weight Lifting)</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <p>Rs. 2,599</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/Mask Group-8.png">
+        <h4>Weight Ball</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>Rs. 3,799</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/Mask Group-6.png">
+        <h4>Treadmill</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <p>Rs. 4,799</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col4">
+        <img src="./assets/Mask Group-4.png">
+        <h4>Kettlebell</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>Rs. 999</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/Mask Group-2.png">
+        <h4>Dumbbell</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <p>Rs. 2,899</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/ball.png">
+        <h4>Ball</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <p>Rs. 5,999</p>
+      </div>
+
+      <div class="col4">
+        <img src="./assets/rope.png">
+        <h4>Rope</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>Rs. 1,399</p>
+      </div>
+    </div>
+  </div>
+
+  <!----------footer------------>
+  <div class="footer">
+    <div class="main">
+      <div class="row">
+        <div class="footercol1">
+          <h3>Download Our App</h3>
+          <p>Download App for Andorid and ios phone.</p>
+          <div class="applogo">
+            <img src="images/app.png">
+            <img src="images/play.png">
+          </div>
+        </div>
+        <div class="footercol2">
+          <img src="images/foot.png">
+          <p>Our main aim is to all person Fit & Healthy</p>
+        </div>
+        <div class="footercol3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li> <a href="./404.html">Coupons</a> </li>
+            <li><a href="./404.html">Blog Post</a></li>
+            <li><a href="./404.html">Return Policy</a></li>
+            <li><a href="./404.html">Join Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="footercol4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/" target="none">Facebook</a> </li>
+            <li><a href="https://www.instagram.com/" target="none">Instagram</a></li>
+            <li><a href="https://twitter.com/?lang=en" target="none">Twitter</a></li>
+            <li><a href="https://web.whatsapp.com/" target="none">WhatsApp</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <hr>
+      <p class="copy">Copyright 2021 - Shop4U</p>
+    </div>
+  </div>
+
+  <!-- js for toggle menu -->
+
+  <script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitems.style.maxHeight == "0px") {
+        menuitems.style.maxHeight = "200px";
+      } else {
+        menuitems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

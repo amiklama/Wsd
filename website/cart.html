@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop4U</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+  <section class="main">
+    <div class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/et.png" width="125px"></a>
+      </div>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <div class="cartlogo">
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+      </div>
+      <img src="images/menu.png" class="menu" onclick="menutoggle()">
+    </div>
+  </section>
+  <!-- cart-items details -->
+  <div class="smallcontainer cartpage">
+    <table>
+      <tr>
+        <th>Product[3]</th>
+        <th>Quantity</th>
+        <th>SubTotal</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cartinfo">
+            <img src="./assets/Mask Group-1.png">
+            <div>
+              <p>Kettlebell</p>
+              <small>Price: Rs. 1,999</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs. 1,999</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cartinfo">
+            <img src="./assets/Mask Group-2.png">
+            <div>
+              <p>Resistant Band</p>
+              <small>Price: Rs. 999</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs. 999</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cartinfo">
+            <img src="./assets//Mask Group-3.png">
+            <div>
+              <p>Dumbbell</p>
+              <small>Price: Rs. 2,599</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs. 2,599</td>
+      </tr>
+    </table>
+    <div class="totalprice">
+      <table>
+        <tr>
+          <td>SubTotal</td>
+          <td>Rs. 8,597</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>Rs. 30.00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>Rs. 8,627</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!----------footer------------>
+  <div class="footer">
+    <div class="main">
+      <div class="row">
+        <div class="footercol1">
+          <h3>Download Our App</h3>
+          <p>Download App for Andorid and ios phone.</p>
+          <div class="applogo">
+            <img src="images/app.png">
+            <img src="images/play.png">
+          </div>
+        </div>
+        <div class="footercol2">
+          <img src="images/foot.png">
+          <p>Our main aim is to all person Fit & Healthy</p>
+        </div>
+        <div class="footercol3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li> <a href="./404.html">Coupons</a> </li>
+            <li><a href="./404.html">Blog Post</a></li>
+            <li><a href="./404.html">Return Policy</a></li>
+            <li><a href="./404.html">Join Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="footercol4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/" target="none">Facebook</a> </li>
+            <li><a href="https://www.instagram.com/" target="none">Instagram</a></li>
+            <li><a href="https://twitter.com/?lang=en" target="none">Twitter</a></li>
+            <li><a href="https://web.whatsapp.com/" target="none">WhatsApp</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <hr>
+      <p class="copy">Copyright 2021 - Shop4U</p>
+    </div>
+  </div>
+
+  <!-- js for toggle menu -->
+
+  <script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitems.style.maxHeight == "0px") {
+        menuitems.style.maxHeight = "200px";
+      } else {
+        menuitems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
